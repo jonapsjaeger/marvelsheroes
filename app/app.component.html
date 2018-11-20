@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Marvel´s Super Heroes by Jonaps</title>
+  </head>
+
+  <body style="background-color: rgb(255, 255, 255)">
+    <h1>{{ title }}</h1>
+    <h2>
+      <svg width="105" height="105">
+        <circle
+          cx="60"
+          cy="60"
+          r="40"
+          fill="red"
+          stroke="black"
+          stroke-width="2"
+        />
+        <circle
+          cx="60"
+          cy="60"
+          r="33.3"
+          fill="white"
+          stroke="black"
+          stroke-width="1"
+        />
+        <circle
+          cx="60"
+          cy="60"
+          r="26.7"
+          fill="red"
+          stroke="black"
+          stroke-width="1"
+        />
+        <circle
+          cx="60"
+          cy="60"
+          r="20"
+          fill="#084cb2"
+          stroke="black"
+          stroke-width="1"
+        />
+        <!-- Star -->
+        <polygon
+          points="60,40 47.7,75.3 79.3,53.3 41,53.3 73.3,75.3"
+          fill="white"
+        />
+      </svg>
+    </h2>
+
+    <nav>
+      <a routerLink="/dashboard"> Dashboard</a>
+      <a routerLink="/heroes"> Heroes</a>
+    </nav>
+    <router-outlet></router-outlet>
+    <app-messages> </app-messages>
+  </body>
+
+  <div class="section" id="contacts">
+    <a href="https://www.sololearn.com/">
+      <img
+        alt="SoloLearn"
+        src="https://www.sololearn.com/Uploads/icons/sololearn.png"
+      />
+    </a>
+    <a href="https://angularjs.org">
+      <img
+        alt="AngularJS"
+        src="https://angularjs.org/img/angularjs-for-header-only.svg"
+      />
+    </a>
+    <a
+      href="https://www.w3schools.com/"
+      target="_blank"
+      style="align-content: center; height:fit-content"
+    >
+      w3schools
+    </a>
+  </div>
+
+  <footer>
+    <div class="copyright">
+      &copy; 2018 Hero list. <br />"Declare variables, not war"
+    </div>
+  </footer>
+</html>
